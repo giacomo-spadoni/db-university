@@ -1,0 +1,11 @@
+1) SELECT * FROM `students` WHERE date_of_birth LIKE '%1990%';
+2) SELECT * FROM `courses` WHERE cfu > 10;
+3) SELECT * FROM students WHERE date_of_birth < '1994-06-20';
+4) SELECT * FROM `courses` WHERE period LIKE 'I semestre' AND year LIKE 1;
+5) SELECT * FROM `exams` WHERE hour > '14:00:00' AND date = '2020-06-20';
+6) SELECT * FROM `degrees` WHERE level = 'magistrale';
+7) SELECT COUNT(*) FROM `departments`;
+8) SELECT COUNT(*) FROM `teachers` WHERE phone IS NULL;
+9) INSERT INTO students (degree_id, name, surname, date_of_birth, fiscal_code, enrolment_date, registration_number, email) VALUES (FLOOR(1 + RAND() * 100), 'Pippo', 'Baudo', '1990-01-01', "PPPBBB90R01G479J", "2018-11-13", "625032", 'tuo.email@example.com');
+10) UPDATE `teachers` SET `office_number` = 126 WHERE `name` = 'Pietro' AND `surname` = 'Rizzo';
+11) DELETE FROM `students` WHERE `id` = 5001;
